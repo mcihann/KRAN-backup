@@ -1,5 +1,0 @@
-﻿Scheme,Description,Purpose
-MinMax,"Standard train-only feature-wise MinMax scaling to ([0,1])",Default setting
-Robust MinMax,Percentile clipping followed by MinMax scaling,Reduces outlier sensitivity
-Quantile-uniform,QuantileTransformer with uniform output distribution,Tests rank-based bounded scaling
-Standard-CDF,StandardScalar followed by Gaussian CDF mapping,Tests standardized probabilistic scaling

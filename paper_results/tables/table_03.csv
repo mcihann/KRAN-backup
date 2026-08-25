@@ -1,7 +1,0 @@
-﻿Dataset,Batch size,Epochs
-Breast Cancer,32,50
-Covertype,256,10
-Adult Income,256,10
-Energy Efficiency,32,100
-California Housing,256,30
-YearPredictionMSD,256,20

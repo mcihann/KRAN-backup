@@ -1,7 +1,0 @@
-﻿Dataset,Task,Top-ranked features,Interpretation
-Breast Cancer,cls,"worst smoothness, worst symmetry, worst texture",Importance is concentrated on worst-case lesion morphology descriptors.
-Adult Income,cls,"native-country_United-States, age, hours-per-week","Importance reflects encoded demographic, geographic, and work-related associations."
-California Housing,reg,"Latitude, AveOccup, Longitude, MedInc",Spatial location and socioeconomic structure dominate the learned effects.
-Energy Efficiency,reg,"X1, X7, X3, X6",Importance is distributed across several building design variables.
-Covertype,cls,"feat_10, feat_2, feat_4",Several encoded covariates jointly contribute to the classification decision.
-YearPredictionMSD,reg,"feat_22, feat_51, feat_16",Importance is more diffuse and should be interpreted together with stability results.
