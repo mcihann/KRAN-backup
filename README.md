@@ -121,8 +121,8 @@ The main KRAN configuration uses:
 
 ## Citation
 
-A `CITATION.cff` file is included. Publication metadata can be updated with the final DOI and journal information after publication.
+A `CITATION.cff` file is included. Publication metadata will be added after acceptance/publication.
 
 ## Code availability
 
-The source code and experimental results for KRAN are available in this repository.
+The source code and experimental results associated with KRAN are provided in this repository.
