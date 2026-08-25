@@ -1,0 +1,7 @@
+﻿Dataset,Spearman,Kendall’s tau,Top-10 overlap,Top-8 overlap,Curve IAD,Normalized Curve IAD,Interpretation
+Adult Income,0.941,0.801,0.833,0.917,0.220,0.156,High ranking stability with moderate curve variation
+Breast Cancer,0.791,0.638,0.767,0.667,0.063,0.067,Moderate-to-high ranking stability and highly stable curves
+California Housing,0.849,0.714,N/A,1.000,0.106,0.096,Strong stability for the selected compact feature set
+Covertype,0.984,0.906,0.900,0.792,0.055,0.125,Strongest ranking stability with low curve deviation
+Energy Efficiency,-0.206,-0.095,N/A,1.000,0.317,0.213,Unstable rank ordering despite complete top-8 coverage
+YearPredictionMSD,0.193,0.133,0.100,0.125,0.644,0.333,Weak ranking stability and the largest curve variation

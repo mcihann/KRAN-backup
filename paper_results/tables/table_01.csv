@@ -1,0 +1,7 @@
+﻿Dataset,Task,#Samples (train/test),#Features,#Classes,Target range,Data type,Note
+Breast Cancer,cls,455 / 114,30,2,-,numeric,Binary classification; all features numeric (sklearn breast_cancer)
+Covertype (50k subset),cls,40000 / 10000,54,7,-,numeric,Multiclass (7 classes); 50k random subset of original dataset
+Adult Income,cls,39073 / 9769,108,2,-,"mixed (categorical + numeric, one-hot encoded)",Binary income classification; monotonic constraints natural on some features
+Energy Efficiency,reg,614 / 154,8,-,"[6.0, 48.0] (Y1, Y2)",numeric,"Multi-output regression (heating & cooling load); nonlinear, small-scale"
+California Housing,reg,16512 / 4128,8,-,"[0.15, 5.00]",numeric,Medium-scale regression; natural monotonic effects w.r.t. some features
+YearPredictionMSD (50k subset),reg,40000 / 10000,90,-,"[1922, 2011]",numeric,Large-scale regression on audio features; 50k subset used

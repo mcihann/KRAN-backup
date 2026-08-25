@@ -1,0 +1,22 @@
+﻿Dataset,Model,Accuracy,Macro-F1,AUC,#Params,TrainTime_sec,InferenceTime_sec
+Adult Income,KRAN,0.877,0.818,0.93,"918,379",208.1,2.129
+Adult Income,HistGradientBoosting,0.875,0.817,0.93,-,0.48,0.01
+Adult Income,GAM,0.861,0.799,0.915,"174,932",70.63,0.7151
+Adult Income,KAN,0.859,0.796,0.914,"111,874",19.39,0.3717
+Adult Income,RandomForest,0.858,0.794,0.907,-,0.73,0.0644
+Adult Income,FT-Transformer-lite,0.853,0.802,0.915,"35,618",13.39,0.1131
+Adult Income,MLP,0.849,0.772,0.904,"11,074",4.28,0.0527
+Breast Cancer,KRAN,0.983,0.981,0.996,"193,504",26.29,0.0592
+Breast Cancer,MLP,0.982,0.981,0.997,"6,274",0.99,0.0017
+Breast Cancer,KAN,0.974,0.972,0.991,"35,074",3.01,0.0113
+Breast Cancer,HistGradientBoosting,0.974,0.971,0.993,-,1.47,0.0013
+Breast Cancer,GAM,0.965,0.962,0.99,"49,982",9.4,0.0254
+Breast Cancer,FT-Transformer-lite,0.956,0.952,0.991,"28,418",2.65,0.0049
+Breast Cancer,RandomForest,0.947,0.943,0.994,-,0.28,0.0315
+Covertype,RandomForest,0.820,0.803,-,-,0.82,0.0796
+Covertype,KRAN,0.794,0.717,-,"386,621",110.96,1.0245
+Covertype,HistGradientBoosting,0.786,0.682,-,-,0.49,0.0086
+Covertype,KAN,0.739,0.604,-,"59,975",12.2,0.2365
+Covertype,GAM,0.738,0.573,-,"98,881",34.83,0.4107
+Covertype,FT-Transformer-lite,0.736,0.576,-,"30,887",8.31,0.0782
+Covertype,MLP,0.729,0.479,-,"8,135",4,0.0439

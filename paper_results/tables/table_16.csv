@@ -1,0 +1,7 @@
+﻿Dataset,Feature,Dominant knot location,Max knot weight
+Breast Cancer,worst concave points,1.000,0.326
+Adult Income,capital-gain,0.133,0.727
+California Housing,MedInc,0.400,0.985
+Energy Efficiency,X1,0.400,1.736
+Covertype,feat_10,0.467,0.846
+YearPredictionMSD,feat_22,1.000,3.827

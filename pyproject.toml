@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kran-tabular"
+version = "1.0.0"
+description = "Knothe-Rosenblatt Additive Network for interpretable tabular learning"
+requires-python = ">=3.10"
+authors = [{name = "Mücahit Cihan"}]
+dependencies = [
+  "numpy==1.26.4", "pandas>=2.0,<3.0", "scipy>=1.10,<2.0",
+  "scikit-learn>=1.4,<2.0", "torch==2.5.1"
+]
+
+[tool.setuptools.packages.find]
+include = ["kran*"]

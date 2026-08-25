@@ -1,0 +1,22 @@
+﻿Dataset,Model,MSE,MAE,R²,#Params,TrainTime_sec
+California Housing,KRAN,0.194,0.289,0.852,"49,097",28.12
+California Housing,HistGradientBoosting,0.216,0.31,0.836,-,0.25
+California Housing,RandomForest,0.254,0.326,0.806,-,1.46
+California Housing,FT-Transformer-lite,0.359,0.407,0.726,"26,273",10.33
+California Housing,KAN,0.364,0.417,0.722,"12,481",5.13
+California Housing,GAM,0.403,0.448,0.692,"13,065",9.56
+California Housing,MLP,0.528,0.527,0.597,"4,801",3.7
+Energy Efficiency,KRAN,0.157,0.297,0.998,"49,097",27.32
+Energy Efficiency,HistGradientBoosting,0.229,0.35,0.998,-,0.17
+Energy Efficiency,RandomForest,0.246,0.358,0.998,-,0.24
+Energy Efficiency,KAN,0.273,0.403,0.997,"12,481",4.55
+Energy Efficiency,FT-Transformer-lite,0.504,0.544,0.995,"26,273",8.18
+Energy Efficiency,GAM,1.199,0.813,0.988,"13,065",10.98
+Energy Efficiency,MLP,7.401,1.825,0.929,"4,801",3.29
+YearPredictionMSD,KRAN,73.376,6.061,0.334,"744,539",352.46
+YearPredictionMSD,HistGradientBoosting,76.322,6.196,0.307,-,0.41
+YearPredictionMSD,RandomForest,79.841,6.458,0.275,-,54.46
+YearPredictionMSD,GAM,84.805,6.384,0.23,"146,971",119.06
+YearPredictionMSD,KAN,95.332,7.116,0.135,"96,449",31.7
+YearPredictionMSD,MLP,206.657,10.468,-0.876,"10,049",7.56
+YearPredictionMSD,FT-Transformer-lite,"1,391,957.63","1,179.77",-12635.585,"34,145",23.6

@@ -1,0 +1,12 @@
+﻿Design aspect,Variant,Adult Income F1,Breast Cancer F1,Covertype F1,Avg. F1,California R²,Energy R²,YearPrediction R²,Avg. R²
+Transport control,IdentityTransport-additive,0.801,0.972,0.633,0.802,0.719,0.998,0.176,0.631
+Reference,KRAN-base,0.818,0.981,0.717,0.839,0.852,0.998,0.334,0.728
+Dropout,KRAN-dropout-0.1,0.8,0.972,0.608,0.793,0.758,0.998,0.068,0.608
+Integrand form,KRAN-integrand-exp,0.802,0.962,0.621,0.795,0.768,0.997,0.219,0.661
+Spline capacity,KRAN-knots-32,0.79,0.952,0.66,0.801,0.759,0.998,0.329,0.695
+Spline capacity,KRAN-knots-8,0.797,0.953,0.615,0.789,0.734,0.997,0.259,0.663
+Head type,KRAN-legacy-spline-MLP-head,0.798,0.972,0.637,0.802,0.759,0.998,0.305,0.687
+Quadrature,KRAN-quad-16,0.797,0.972,0.619,0.796,0.758,0.998,0.204,0.653
+Quadrature,KRAN-quad-64,0.798,0.972,0.624,0.798,0.759,0.998,0.147,0.635
+Quadrature,KRAN-quad-8,0.798,0.972,0.615,0.795,0.758,0.997,0.121,0.625
+Head type,KRAN-transport-linear-head,0.784,0.972,0.501,0.752,0.561,0.914,-3.524,-0.683
