@@ -8,7 +8,7 @@ flowchart LR
     B --> C[Transported coordinates]
     C --> D[Per-coordinate hat-spline basis]
     D --> E[Additive spline effects]
-    E --> F[Regression output / class logits]
+    E --> F[Regression output / classification logits]
 ```
 
 ## Overview
