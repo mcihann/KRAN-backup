@@ -1,0 +1,25 @@
+Dataset,Variant,Task,Accuracy,Macro-F1,R²,FinalLatentAbsCorr,Train time (s),Inference time (s)
+Adult Income,KRAN-no-penalty,cls,0.878,0.819,—,0.030,1.634e-05,235.6
+Adult Income,KRAN-corr-decorrelation,cls,0.868,0.807,—,0.030,1.632e-05,252.7
+Adult Income,KRAN-hsic-dependence,cls,0.866,0.804,—,0.030,1.634e-05,308.2
+Adult Income,KRAN-corr+smoothness,cls,0.868,0.807,—,0.030,1.633e-05,239.6
+Breast Cancer,KRAN-no-penalty,cls,0.980,0.978,—,0.477,2.542e-02,22.53
+Breast Cancer,KRAN-corr-decorrelation,cls,0.972,0.970,—,0.263,9.808e-03,27.13
+Breast Cancer,KRAN-hsic-dependence,cls,0.972,0.970,—,0.477,2.569e-02,63.45
+Breast Cancer,KRAN-corr+smoothness,cls,0.972,0.969,—,0.266,9.811e-03,22.63
+Covertype,KRAN-no-penalty,cls,0.851,0.777,—,0.046,2.473e-04,201.0
+Covertype,KRAN-corr-decorrelation,cls,0.848,0.757,—,0.044,4.262e-04,196.7
+Covertype,KRAN-hsic-dependence,cls,0.846,0.774,—,0.046,2.525e-04,314.0
+Covertype,KRAN-corr+smoothness,cls,0.848,0.761,—,0.044,4.203e-04,192.4
+California Housing,KRAN-no-penalty,reg,—,—,0.847,0.210,1.400e-02,34.6
+California Housing,KRAN-corr-decorrelation,reg,—,—,0.848,0.202,1.398e-02,35.8
+California Housing,KRAN-hsic-dependence,reg,—,—,0.847,0.220,1.417e-02,94.7
+California Housing,KRAN-corr+smoothness,reg,—,—,0.849,0.203,1.391e-02,44.3
+Energy Efficiency,KRAN-no-penalty,reg,—,—,0.995,0.311,1.526e-02,27.3
+Energy Efficiency,KRAN-corr-decorrelation,reg,—,—,0.995,0.303,1.509e-02,28.3
+Energy Efficiency,KRAN-hsic-dependence,reg,—,—,0.995,0.312,1.531e-02,90.4
+Energy Efficiency,KRAN-corr+smoothness,reg,—,—,0.994,0.281,1.489e-02,28.9
+YearPredictionMSD,KRAN-no-penalty,reg,—,—,0.336,0.145,5.529e-03,334.8
+YearPredictionMSD,KRAN-corr-decorrelation,reg,—,—,0.331,0.088,2.528e-03,344.1
+YearPredictionMSD,KRAN-hsic-dependence,reg,—,—,0.335,0.146,5.578e-03,592.4
+YearPredictionMSD,KRAN-corr+smoothness,reg,—,—,0.330,0.089,2.716e-03,336.0

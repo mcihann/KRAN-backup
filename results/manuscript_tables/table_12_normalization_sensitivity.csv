@@ -1,0 +1,25 @@
+Dataset,Task,Scalar,Accuracy,Macro-F1,ECE,Brier,NLL,R²,MAE,MSE
+Adult Income,cls,MinMax,0.884,0.819,0.008,0.185,0.298,—,—,—
+Adult Income,cls,Robust-MinMax,0.880,0.818,0.010,0.184,0.296,—,—,—
+Adult Income,cls,Quantile-uniform,0.876,0.815,0.009,0.187,0.302,—,—,—
+Adult Income,cls,Standard-CDF,0.876,0.820,0.011,0.185,0.294,—,—,—
+Breast Cancer,cls,MinMax,0.980,0.978,0.032,0.036,0.068,—,—,—
+Breast Cancer,cls,Robust-MinMax,0.980,0.978,0.035,0.033,0.065,—,—,—
+Breast Cancer,cls,Quantile-uniform,0.974,0.969,0.029,0.041,0.072,—,—,—
+Breast Cancer,cls,Standard-CDF,0.980,0.978,0.030,0.039,0.069,—,—,—
+Covertype,cls,MinMax,0.851,0.777,0.009,0.344,0.619,—,—,—
+Covertype,cls,Robust-MinMax,0.851,0.778,0.006,0.345,0.62,—,—,—
+Covertype,cls,Quantile-uniform,0.846,0.769,0.006,0.349,0.624,—,—,—
+Covertype,cls,Standard-CDF,0.852,0.779,0.01,0.341,0.615,—,—,—
+California Housing,reg,MinMax,—,—,—,—,—,0.851,0.285,0.192
+California Housing,reg,Robust-MinMax,—,—,—,—,—,0.854,0.281,0.187
+California Housing,reg,Quantile-uniform,—,—,—,—,—,0.855,0.281,0.186
+California Housing,reg,Standard-CDF,—,—,—,—,—,0.856,0.280,0.186
+Energy Efficiency,reg,MinMax,—,—,—,—,—,0.995,0.359,0.377
+Energy Efficiency,reg,Robust-MinMax,—,—,—,—,—,0.995,0.358,0.375
+Energy Efficiency,reg,Quantile-uniform,—,—,—,—,—,0.995,0.355,0.372
+Energy Efficiency,reg,Standard-CDF,—,—,—,—,—,0.995,0.352,0.369
+YearPredictionMSD,reg,MinMax,—,—,—,—,—,0.336,6.002,75.331
+YearPredictionMSD,reg,Robust-MinMax,—,—,—,—,—,0.328,6.063,76.014
+YearPredictionMSD,reg,Quantile-uniform,—,—,—,—,—,0.305,6.133,78.028
+YearPredictionMSD,reg,Standard-CDF,—,—,—,—,—,0.312,6.059,77.225

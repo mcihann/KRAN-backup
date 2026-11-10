@@ -4,4 +4,4 @@ from .model import KRAN, KRANConfig, KRMonoMap, AdditiveSplineHead, HatSpline1D,
 __all__ = [
     "KRAN", "KRANConfig", "KRMonoMap", "AdditiveSplineHead", "HatSpline1D", "SplineExpansion"
 ]
-__version__ = "1.0.0"
+__version__ = "1.1.0"

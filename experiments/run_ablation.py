@@ -19,4 +19,4 @@ for ds in DATASETS:
  b=load_dataset(ds,42,'minmax'); d=b.X_train.shape[1]; o=output_dim(b)
  for name,kw in VARIANTS.items():
   set_seed(42); m=KRAN(KRANConfig(d,o,task=b.task,**kw)); r,_=run_torch_model(name,m,b,42,lr=1e-3,weight_decay=1e-4); r['Variant']=r.pop('Model'); rows.append(r); print(r)
-Path('results').mkdir(exist_ok=True); pd.DataFrame(rows).to_csv('results/ablation.csv',index=False)
+Path('results/generated').mkdir(parents=True, exist_ok=True); pd.DataFrame(rows).to_csv('results/generated/ablation.csv',index=False)

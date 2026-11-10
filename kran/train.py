@@ -21,7 +21,7 @@ def loaders(Xtr,ytr,Xte,yte,batch_size,task):
 
 
 def train_model(model, loader, task, epochs, lr=1e-3, weight_decay=1e-4, device=None,
-                lambda_decorr=0.0, lambda_hsic=0.0, gamma_smooth=0.0, hsic_max_pairs=None):
+                lambda_decorr=0.0, lambda_hsic=0.0, gamma_smooth=0.0, hsic_max_pairs=None, hsic_max_samples=None):
     device=device or ('cuda' if torch.cuda.is_available() else 'cpu'); model.to(device)
     opt=torch.optim.AdamW(model.parameters(),lr=lr,weight_decay=weight_decay)
     loss_fn=nn.CrossEntropyLoss(label_smoothing=0.0) if task=='classification' else nn.MSELoss()
@@ -34,7 +34,7 @@ def train_model(model, loader, task, epochs, lr=1e-3, weight_decay=1e-4, device=
             loss=loss_fn(pred,yb)
             z=extra.get('z')
             if z is not None and lambda_decorr: loss=loss+lambda_decorr*decorrelation_penalty(z)
-            if z is not None and lambda_hsic: loss=loss+lambda_hsic*hsic_penalty(z,hsic_max_pairs)
+            if z is not None and lambda_hsic: loss=loss+lambda_hsic*hsic_penalty(z[:hsic_max_samples] if hsic_max_samples else z, hsic_max_pairs)
             if gamma_smooth and hasattr(model,'head') and hasattr(model.head,'coefficients'):
                 loss=loss+gamma_smooth*pspline_smoothness_penalty(model.head)
             opt.zero_grad(); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(),5.0); opt.step()

@@ -1,0 +1,34 @@
+Dataset,Variant,#Params,Train Time sec,Num Epochs,Spline num knots,Mono integrand,mono num quad points,Mono dropout,Accuracy,Macro-F1,ECE,NLL,Brier,Inference Time sec
+Adult Income,KRAN-base,843374,235.73,10,16.0,softplus,32.0,0,0.870,0.808,0.008,0.299,0.189,2.1778
+Adult Income,KRAN-integrand-exp,843374,234.93,10,16.0,exp,32.0,0,0.857,0.791,0.010,0.307,0.196,2.2101
+Adult Income,KRAN-quad-8,843374,237.72,10,16.0,softplus,8.0,0,0.857,0.791,0.010,0.307,0.196,2.0982
+Adult Income,KRAN-quad-16,843374,229.47,10,16.0,softplus,16.0,0,0.857,0.791,0.010,0.307,0.196,1.9265
+Adult Income,KRAN-quad-64,843374,228.39,10,16.0,softplus,64.0,0,0.857,0.791,0.010,0.307,0.196,2.1274
+Adult Income,KRAN-knots-8,841646,224.42,10,8.0,softplus,32.0,0,0.854,0.783,0.009,0.312,0.199,2.1013
+Adult Income,KRAN-knots-32,846830,234.16,10,32.0,softplus,32.0,0,0.857,0.796,0.012,0.309,0.197,2.0950
+Adult Income,KRAN-dropout-0.1,843374,258.28,10,16.0,softplus,32.0,0.1,0.857,0.790,0.011,0.308,0.196,2.2729
+Adult Income,KRAN-legacy-spline-MLP-head,954862,237.16,10,16.0,softplus,32.0,0,0.859,0.796,0.011,0.301,0.193,2.0876
+Adult Income,KRAN-transport-linear-head,840134,203.03,10,N/A,softplus,32.0,0,0.851,0.779,0.011,0.321,0.205,1.8793
+Adult Income,IdentityTransport-additive,3458,12.231,10,16.0,N/A,N/A,N/A,0.854,0.786,0.010,0.313,0.200,0.2779
+Breast Cancer,KRAN-base,159392,22.51,50,16.0,softplus,32.0,0,0.981,0.979,0.031,0.067,0.035,0.0509
+Breast Cancer,KRAN-integrand-exp,159392,23.53,50,16.0,exp,32.0,0,0.971,0.969,0.033,0.074,0.041,0.0533
+Breast Cancer,KRAN-quad-8,159392,23.13,50,16.0,softplus,8.0,0,0.973,0.971,0.035,0.074,0.041,0.0515
+Breast Cancer,KRAN-quad-16,159392,22.63,50,16.0,softplus,16.0,0,0.971,0.969,0.036,0.074,0.041,0.0515
+Breast Cancer,KRAN-quad-64,159392,22.98,50,16.0,softplus,64.0,0,0.970,0.967,0.035,0.075,0.042,0.0521
+Breast Cancer,KRAN-knots-8,158912,22.07,50,8.0,softplus,32.0,0,0.973,0.971,0.035,0.068,0.037,0.0509
+Breast Cancer,KRAN-knots-32,160352,22.70,50,32.0,softplus,32.0,0,0.961,0.958,0.042,0.103,0.059,0.0521
+Breast Cancer,KRAN-dropout-0.1,159392,24.02,50,16.0,softplus,32.0,0.1,0.968,0.966,0.039,0.089,0.050,0.0521
+Breast Cancer,KRAN-legacy-spline-MLP-head,193504,23.00,50,16.0,softplus,32.0,0,0.947,0.942,0.043,0.176,0.084,0.0612
+Breast Cancer,KRAN-transport-linear-head,158492,19.36,50,N/A,softplus,32.0,0,0.982,0.981,0.039,0.073,0.036,0.0436
+Breast Cancer,IdentityTransport-additive,962,1.644,50,16.0,N/A,N/A,N/A,0.940,0.934,0.049,0.112,0.065,0.0078
+Covertype,KRAN-base,332701,201.36,10,16.0,softplus,32.0,0,0.841,0.774,0.012,0.620,0.354,0.6359
+Covertype,KRAN-integrand-exp,332701,202.65,10,16.0,exp,32.0,0,0.828,0.771,0.018,0.628,0.374,0.5915
+Covertype,KRAN-quad-8,332701,203.66,10,16.0,softplus,8.0,0,0.827,0.767,0.019,0.629,0.375,0.5877
+Covertype,KRAN-quad-16,332701,200.79,10,16.0,softplus,16.0,0,0.828,0.764,0.018,0.628,0.374,0.5949
+Covertype,KRAN-quad-64,332701,203.48,10,16.0,softplus,64.0,0,0.827,0.764,0.018,0.628,0.374,0.5783
+Covertype,KRAN-knots-8,329677,201.91,10,8.0,softplus,32.0,0,0.823,0.752,0.017,0.633,0.379,0.6058
+Covertype,KRAN-knots-32,338749,203.61,10,32.0,softplus,32.0,0,0.827,0.776,0.019,0.631,0.375,0.5982
+Covertype,KRAN-dropout-0.1,332701,220.25,10,16.0,softplus,32.0,0.1,0.826,0.767,0.018,0.632,0.375,0.6046
+Covertype,KRAN-legacy-spline-MLP-head,386621,202.08,10,16.0,softplus,32.0,0,0.847,0.701,0.010,0.582,0.351,0.5832
+Covertype,KRAN-transport-linear-head,327031,176.76,10,N/A,softplus,32.0,0,0.812,0.776,0.030,0.694,0.401,0.5264
+Covertype,IdentityTransport-additive,6055,12.189,10,16.0,N/A,N/A,N/A,0.725,0.761,0.034,0.655,0.383,0.0849

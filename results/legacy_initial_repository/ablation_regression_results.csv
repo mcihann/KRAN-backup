@@ -1,0 +1,34 @@
+Dataset,Variant,NumParams,TrainTime_sec,NumEpochs,SplineNumKnots,MonoIntegrand,MonoNumQuadPoints,MonoDropout,MSE,MAE,R2,InferenceTime_sec
+Energy Efficiency,KRAN-base,49097,21.26,100,16,softplus,32,0,0.157,0.297,0.998,0.020
+Energy Efficiency,KRAN-integrand-exp,49097,21.74,100,16,exp,32,0,0.283,0.408,0.997,0.021
+Energy Efficiency,KRAN-quad-8,49097,19.95,100,16,softplus,8,0,0.264,0.394,0.997,0.019
+Energy Efficiency,KRAN-quad-16,49097,20.30,100,16,softplus,16,0,0.257,0.372,0.998,0.019
+Energy Efficiency,KRAN-quad-64,49097,21.31,100,16,softplus,64,0,0.246,0.375,0.998,0.021
+Energy Efficiency,KRAN-knots-8,45001,20.48,100,8,softplus,32,0,0.305,0.417,0.997,0.020
+Energy Efficiency,KRAN-knots-32,57289,20.56,100,32,softplus,32,0,0.248,0.365,0.998,0.021
+Energy Efficiency,KRAN-dropout-0.1,49097,23.04,100,16,softplus,32,0.1,0.257,0.368,0.998,0.021
+Energy Efficiency,KRAN-legacy-spline-MLP-head,49097,20.54,100,16,softplus,32,0,0.237,0.365,0.998,0.020
+Energy Efficiency,KRAN-transport-linear-head,36625,16.84,100,16,softplus,32,0,8.921,2.011,0.914,0.032
+Energy Efficiency,IdentityTransport-additive,49097,4.79,100,16,softplus,32,0,0.248,0.387,0.998,0.006
+California Housing,KRAN-base,49097,27.33,30,16,softplus,32,0,0.194,0.289,0.852,0.082
+California Housing,KRAN-integrand-exp,49097,22.93,30,16,exp,32,0,0.304,0.375,0.768,0.085
+California Housing,KRAN-quad-8,49097,21.96,30,16,softplus,8,0,0.318,0.386,0.758,0.082
+California Housing,KRAN-quad-16,49097,21.53,30,16,softplus,16,0,0.316,0.386,0.758,0.082
+California Housing,KRAN-quad-64,49097,24.27,30,16,softplus,64,0,0.316,0.386,0.759,0.118
+California Housing,KRAN-knots-8,45001,26.30,30,8,softplus,32,0,0.348,0.407,0.734,0.080
+California Housing,KRAN-knots-32,57289,21.54,30,32,softplus,32,0,0.315,0.378,0.759,0.079
+California Housing,KRAN-dropout-0.1,49097,23.28,30,16,softplus,32,0.1,0.317,0.385,0.758,0.083
+California Housing,KRAN-legacy-spline-MLP-head,49097,21.43,30,16,softplus,32,0,0.316,0.385,0.759,0.080
+California Housing,KRAN-transport-linear-head,36625,17.07,30,16,softplus,32,0,0.575,0.553,0.561,0.092
+California Housing,IdentityTransport-additive,49097,7.22,30,16,softplus,32,0,0.368,0.412,0.719,0.044
+YearPredictionMSD,KRAN-base,744539,342.15,20,16,softplus,32,0,73.376,6.061,0.334,2.572
+YearPredictionMSD,KRAN-integrand-exp,744539,364.48,20,16,exp,32,0,134.248,10.023,0.219,1.663
+YearPredictionMSD,KRAN-quad-8,744539,369.36,20,16,softplus,8,0,96.855,6.557,0.121,1.666
+YearPredictionMSD,KRAN-quad-16,744539,362.54,20,16,softplus,16,0,87.701,6.943,0.204,3.044
+YearPredictionMSD,KRAN-quad-64,744539,367.13,20,16,softplus,64,0,93.985,7.498,0.147,1.873
+YearPredictionMSD,KRAN-knots-8,698459,351.36,20,8,softplus,32,0,138.641,10.070,0.259,1.640
+YearPredictionMSD,KRAN-knots-32,836699,344.85,20,32,softplus,32,0,146.406,8.660,0.329,2.281
+YearPredictionMSD,KRAN-dropout-0.1,744539,377.43,20,16,softplus,32,0.1,117.658,9.169,0.068,2.820
+YearPredictionMSD,KRAN-legacy-spline-MLP-head,744539,345.90,20,16,softplus,32,0,143.726,10.488,0.305,1.942
+YearPredictionMSD,KRAN-transport-linear-head,648181,281.90,20,16,softplus,32,0,498.307,15.798,-3.524,2.265
+YearPredictionMSD,IdentityTransport-additive,744539,31.51,20,16,softplus,32,0,129.526,9.313,0.176,0.326

@@ -1,23 +1,20 @@
-# Results
+# Experimental outputs and provenance
 
-This directory contains machine-readable experimental results reported for KRAN.
+This directory separates **three types of information that must not be conflated**:
 
-## Files
+| Folder | Data provenance | Appropriate claim |
+|---|---|---|
+| [`manuscript_tables/`](manuscript_tables/) | CSV transcription of the **22 tables** present in the user-supplied revised manuscript DOCX | "Reported in the revised manuscript"; **not** newly executed |
+| [`legacy_initial_repository/`](legacy_initial_repository/) | 11 CSV files **unchanged** from the original uploaded repository, dated before the revision | Historical/replaced; **do not** use as current paper results |
+| `generated/` | Outputs of repository scripts, created when a user actually runs them | Newly executed under the recorded code/environment; not necessarily numerically identical to the revised manuscript |
 
-- `main_regression_results.csv` — regression benchmark comparison.
-- `main_classification_results.csv` — classification benchmark comparison.
-- `ablation_regression_results.csv` — regression architecture ablations.
-- `ablation_classification_results.csv` — classification architecture ablations.
-- `quadrature_diagnostics.csv` — KR-MonoMap quadrature and numerical-stability diagnostics.
-- `regularization_results.csv` — decorrelation, HSIC, smoothness, and no-penalty comparisons.
-- `normalization_results.csv` — preprocessing and normalization robustness.
-- `noise_robustness_results.csv` — classification performance and calibration under Gaussian feature noise.
-- `feature_ordering_results.csv` — sensitivity to input-feature ordering.
-- `interpretability_stability.csv` — feature-ranking and effect-curve stability across repeated runs.
-- `scalability_results.csv` — synthetic scalability results across feature dimensions and quadrature resolutions.
+**Source extraction warning:** Word can contain concatenated numeric text without an explicit ± sign (e.g., `0.192004` in a main-comparison cell). The CSVs preserve cell text exactly, rather than presuming which digits form the mean and standard deviation. Inspect the DOCX and correct the actual source table before interpreting these ambiguous entries as numeric mean/SD pairs. Table 11 also has a column-label anomaly affecting training/inference-time interpretation. See the Turkish audit report in `docs/`.
 
-## Conventions
+To regenerate the reference-table transcription from a local, authorized copy of the DOCX:
 
-Values retain the precision reported in the manuscript. Empty metric fields indicate that the corresponding
-metric is not applicable to that task. `N/A` is retained where it carries an explicit not-applicable meaning
-in the reported analysis.
+```bash
+python -m pip install -e ".[tables]"
+python scripts/extract_manuscript_tables.py /path/to/revised_manuscript.docx
+```
+
+Do not manually copy numbers between **fixed-budget** ablations and **inner-validation-selected repeated-holdout** experiments: they use distinct training durations, target transforms, and selection procedures. Never call the archived 11 legacy CSVs a reproduction of the revised paper.

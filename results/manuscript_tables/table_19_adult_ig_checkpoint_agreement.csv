@@ -1,0 +1,2 @@
+Dataset,Checkpoints,Common encoded features,Spearman,Kendall’s τ,Top-3 overlap,Top-5 overlap,Top-10 overlap
+Adult Income,5,107,0.773 ± 0.037,0.674 ± 0.031,0.567 ± 0.225,0.680 ± 0.103,0.810 ± 0.088

@@ -20,4 +20,4 @@ for ds in DATASETS:
             probs=m.predict_proba(b.X_test); met=classification_metrics(b.y_test,probs)
         else: met=regression_metrics(b.y_test,pred)
         r={'Dataset':b.name,'Model':name,'#Params':None,'TrainTime_sec':tt,'InferenceTime_sec':it,**met}; rows.append(r); print(r)
-Path('results').mkdir(exist_ok=True); pd.DataFrame(rows).to_csv('results/main_benchmarks.csv',index=False)
+Path('results/generated').mkdir(parents=True, exist_ok=True); pd.DataFrame(rows).to_csv('results/generated/main_benchmarks.csv',index=False)

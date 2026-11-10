@@ -12,4 +12,4 @@ for ds in ['breast_cancer','covertype','adult_income']:
   for sigma in [0.,.01,.05,.1]:
    rng=np.random.RandomState(42); X=np.clip(b.X_test+rng.normal(0,sigma,b.X_test.shape),0,1).astype(np.float32)
    _,te=loaders(b.X_train,b.y_train,X,b.y_test,b.batch_size,b.task); y,p,_=predict(m,te,b.task); r={'Dataset':b.name,'Model':name,'NoiseSigma':sigma,**classification_metrics(y,p)}; rows.append(r); print(r)
-Path('results').mkdir(exist_ok=True); pd.DataFrame(rows).to_csv('results/noise_robustness.csv',index=False)
+Path('results/generated').mkdir(parents=True, exist_ok=True); pd.DataFrame(rows).to_csv('results/generated/noise_robustness.csv',index=False)

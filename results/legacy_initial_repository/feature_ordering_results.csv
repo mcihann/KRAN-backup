@@ -1,0 +1,43 @@
+Dataset,Ordering,Task,Accuracy,MacroF1,R2,TrainTime_sec
+Adult Income,mutual_info,cls,0.864,0.805,,214.43
+Adult Income,original,cls,0.877,0.818,,196.55
+Adult Income,random_1,cls,0.859,0.798,,211.04
+Adult Income,random_2,cls,0.857,0.798,,206.88
+Adult Income,random_3,cls,0.857,0.797,,217.24
+Adult Income,rf_importance,cls,0.862,0.802,,200.82
+Adult Income,target_corr,cls,0.864,0.802,,213.36
+Breast Cancer,mutual_info,cls,0.974,0.972,,28.07
+Breast Cancer,original,cls,0.983,0.981,,26.71
+Breast Cancer,random_1,cls,0.974,0.972,,34.39
+Breast Cancer,random_2,cls,0.974,0.972,,26.24
+Breast Cancer,random_3,cls,0.974,0.972,,27.75
+Breast Cancer,rf_importance,cls,0.974,0.972,,26.71
+Breast Cancer,target_corr,cls,0.965,0.962,,26.30
+Covertype,mutual_info,cls,0.765,0.650,,109.03
+Covertype,original,cls,0.794,0.717,,106.12
+Covertype,random_1,cls,0.764,0.632,,94.11
+Covertype,random_2,cls,0.758,0.624,,101.51
+Covertype,random_3,cls,0.759,0.621,,123.52
+Covertype,rf_importance,cls,0.763,0.635,,108.16
+Covertype,target_corr,cls,0.764,0.639,,99.05
+California Housing,mutual_info,reg,,,0.757,25.77
+California Housing,original,reg,,,0.852,23.49
+California Housing,random_1,reg,,,0.752,25.81
+California Housing,random_2,reg,,,0.748,25.45
+California Housing,random_3,reg,,,0.756,25.04
+California Housing,rf_importance,reg,,,0.759,29.81
+California Housing,target_corr,reg,,,0.758,21.61
+Energy Efficiency,mutual_info,reg,,,0.998,20.68
+Energy Efficiency,original,reg,,,0.998,22.89
+Energy Efficiency,random_1,reg,,,0.998,20.86
+Energy Efficiency,random_2,reg,,,0.997,22.39
+Energy Efficiency,random_3,reg,,,0.998,20.51
+Energy Efficiency,rf_importance,reg,,,0.998,20.49
+Energy Efficiency,target_corr,reg,,,0.998,20.50
+YearPredictionMSD,mutual_info,reg,,,0.213,354.67
+YearPredictionMSD,original,reg,,,0.334,347.01
+YearPredictionMSD,random_1,reg,,,0.146,350.60
+YearPredictionMSD,random_2,reg,,,0.175,354.83
+YearPredictionMSD,random_3,reg,,,0.185,345.72
+YearPredictionMSD,rf_importance,reg,,,0.206,361.99
+YearPredictionMSD,target_corr,reg,,,0.172,351.33
