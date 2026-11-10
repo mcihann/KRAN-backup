@@ -1,0 +1,31 @@
+Dataset,Model,MSE,MAE,R²,#Params,TrainTime_sec
+California Housing,KRAN,0.192004,0.285003,0.851001,"36,873",34.56 ± 3.98
+California Housing,HistGradientBoosting,0.214006,0.309003,0.838002,N/A,0.250 ± 0.02
+California Housing,RandomForest,0.247008,0.323004,0.813004,N/A,1.750 ± 0.11
+California Housing,FT-Transformer-lite,0.369053,0.412035,0.721037,"17,633",20.16 ± 5.59
+California Housing,KAN,0.248005,0.331007,0.813002,"12,481",28.92 ± 2.29
+California Housing,GAM,0.409011,0.456008,0.691009,129,25.45 ± 1.32
+California Housing,MLP,0.419021,0.448006,0.684020,"4,801",20.30 ± 1.02
+California Housing,XGBoost,0.196007,0.291005,0.851004,N/A,0.350 ± 0.12
+California Housing,LightGBM,0.198007,0.295004,0.850003,N/A,0.240 ± 0.08
+California Housing,CatBoost,0.219009,0.316005,0.834005,N/A,0.820 ± 0.17
+Energy Efficiency,KRAN,0.37726,0.359062,0.995002,"36,874",27.32 ± 2.23
+Energy Efficiency,HistGradientBoosting,0.893146,0.615050,0.990001,N/A,0.280 ± 0.10
+Energy Efficiency,RandomForest,2.008423,0.725088,0.977004,N/A,0.190 ± 0.05
+Energy Efficiency,KAN,1.304339,0.704069,0.985003,"12,546",4.568 ± 1.71
+Energy Efficiency,FT-Transformer-lite,1.918412,0.934192,0.978003,"17,666",3.956 ± 1.63
+Energy Efficiency,GAM,2.034237,1.030072,0.977002,258,2.544 ± 1.98
+Energy Efficiency,MLP,8.634654,2.038088,0.906013,"4,866",3.060 ± 2.02
+Energy Efficiency,XGBoost,0.502114,0.426031,0.994001,N/A,0.300 ± 0.22
+Energy Efficiency,LightGBM,0.724101,0.550036,0.991001,N/A,0.150 ± 0.06
+Energy Efficiency,CatBoost,0.425056,0.411025,0.995001,N/A,0.270 ± 0.18
+YearPredictionMSD,KRAN,75.331265,6.002037,0.336008,"649,531",334.75 ± 35.80
+YearPredictionMSD,HistGradientBoosting,79.327471,6.283045,0.299011,N/A,0.4301 ± 0.12
+YearPredictionMSD,RandomForest,82.562451,6.538053,0.271010,N/A,75.470 ± 5.06
+YearPredictionMSD,GAM,84.080107,6.561062,0.257008,"1,441",44.800 ± 10.44
+YearPredictionMSD,KAN,80.284392,6.232099,0.291010,"96,449",32.030 ± 8.18
+YearPredictionMSD,MLP,84.470 ± 2.088,6.647299,0.254018,"10,049",49.910 ± 2.41
+YearPredictionMSD,FT-Transformer-lite,82.493 ± 3.472,6.319219,0.271029,"22,881",107.90 ± 23.67
+YearPredictionMSD,XGBoost,75.581369,6.132049,0.332009,N/A,3.0408 ± 1.51
+YearPredictionMSD,LightGBM,76.183198,6.149049,0.327009,N/A,1.2603 ± 0.62
+YearPredictionMSD,CatBoost,79.264240,6.284050,0.300008,N/A,3.8306 ± 1.07

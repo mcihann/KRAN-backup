@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kran-tabular"
-version = "1.0.0"
+version = "1.1.0"
 description = "Knothe-Rosenblatt Additive Network for interpretable tabular learning"
 requires-python = ">=3.10"
 authors = [{name = "Mücahit Cihan"}]
@@ -15,3 +15,11 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 include = ["kran*"]
+
+[project.optional-dependencies]
+experiments = [
+    "xgboost>=2.0,<4.0", "lightgbm>=4.0,<5.0", "catboost>=1.2,<2.0",
+    "matplotlib>=3.7,<4.0", "shap>=0.45,<1.0",
+]
+tables = ["python-docx>=1.1,<2.0"]
+test = ["pytest>=8,<10"]

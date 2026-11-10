@@ -7,7 +7,9 @@ venv/
 .vscode/
 .pytest_cache/
 .DS_Store
-results/*.csv
+# Keep published reference tables and the original-repository archive tracked.
+# Only newly generated outputs are ignored.
+results/generated/
 checkpoints/
 *.pt
 *.pth

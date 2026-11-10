@@ -1,0 +1,4 @@
+Noise σ,Accepted replicates,Spearman: all encoded features,Spearman: original-variable groups,Spearman: perturbed numerical features,Relative L1 change: perturbed numerical features
+0.01,11/15,0.9996,0.9552,0.8857,0.2196
+0.05,13/15,0.9987,0.8052,0.5516,0.9647
+0.10,12/15,0.9983,0.7601,0.4762,1.6704

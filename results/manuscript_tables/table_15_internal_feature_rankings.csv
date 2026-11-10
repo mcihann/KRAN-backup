@@ -1,0 +1,7 @@
+Dataset,Task,Top-ranked features,Interpretation
+Breast Cancer,cls,"worst smoothness, worst symmetry, worst texture",Emphasis on worst-case nuclear morphology descriptors.
+Adult Income,cls,"native-country_United-States, age, hours-per-week",Associations within the encoded demographic and socioeconomic representation.
+California Housing,reg,"Latitude, AveOccup, Longitude, MedInc",Prominent spatial and neighborhood-related components.
+Energy Efficiency,reg,"X1, X7, X3, X6",Importance distributed across several building-design variables.
+Covertype,cls,"feat_10, feat_2, feat_4",Several encoded input dimensions contribute to the learned representation.
+YearPredictionMSD,reg,"feat_22, feat_51, feat_16",A leading component accompanied by a more distributed group of secondary components.

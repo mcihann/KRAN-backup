@@ -1,0 +1,5 @@
+Scheme,Description,Purpose
+MinMax,"Training-fitted feature-wise MinMax scaling, clipped to [0, 1]",Default KRAN preprocessing
+Robust MinMax,"Training-derived 1st-99th percentile clipping followed by scaling to [0, 1]",Assess sensitivity to extreme observations
+Quantile-uniform,Training-fitted QuantileTransformer with uniform output,Assess rank-based normalization
+Standard-CDF,Training-fitted StandardScaler followed by the standard normal CDF,Assess distribution-based bounded normalization

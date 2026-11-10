@@ -17,4 +17,4 @@ for ds in ['breast_cancer','covertype','adult_income','energy_efficiency','calif
  for name,idx in orders.items():
   b2=type(b)(b.name,b.task,b.X_train[:,idx],b.X_test[:,idx],b.y_train,b.y_test,[b.feature_names[i] for i in idx],b.num_classes,b.batch_size,b.epochs)
   set_seed(42); m=KRAN(KRANConfig(b2.X_train.shape[1],output_dim(b2),task=b2.task)); r,_=run_torch_model('KRAN',m,b2,42,lr=1e-3,weight_decay=1e-4); r['Ordering']=name; rows.append(r); print(r)
-Path('results').mkdir(exist_ok=True); pd.DataFrame(rows).to_csv('results/feature_ordering.csv',index=False)
+Path('results/generated').mkdir(parents=True, exist_ok=True); pd.DataFrame(rows).to_csv('results/generated/feature_ordering.csv',index=False)

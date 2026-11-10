@@ -1,0 +1,7 @@
+Dataset,Method comparison,Spearman,Kendall’s τ,Top-5 overlap
+Breast Cancer,IG vs. SHAP,0.875 ± 0.055,0.706 ± 0.065,0.720
+Breast Cancer,IG vs. Permutation,0.668 ± 0.050,0.501 ± 0.043,0.720
+Breast Cancer,SHAP vs. Permutation,0.609 ± 0.146,0.444 ± 0.114,0.720
+Adult Income,Grouped IG vs. Grouped SHAP,0.713 ± 0.167,0.587 ± 0.158,0.600 ± 0.141
+Adult Income,Grouped IG vs. Grouped Permutation,0.678 ± 0.186,0.569 ± 0.119,0.640 ± 0.167
+Adult Income,Grouped SHAP vs. Grouped Permutation,0.788 ± 0.140,0.648 ± 0.122,0.720 ± 0.110

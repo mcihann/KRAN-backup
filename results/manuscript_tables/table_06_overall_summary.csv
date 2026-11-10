@@ -1,0 +1,11 @@
+Model,#Params typical,Train time on Adult observed sec,Param memory MB,Avg R² reg,Avg Macro-F1 cls
+KRAN,"246,527",235.61 ± 45.71,0.986,0.7273,0.8580
+MLP,"7,205",15.28 ± 6.25,0.029,0.6149,0.8025
+KAN,"47,525",59.23 ± 31.63,0.190,0.6965,0.8336
+GAM,"1,202",222.35 ± 61.27,0.005,0.6423,0.7775
+FT-Transformer-lite,"19,925",41.53 ± 12.41,0.080,0.6574,0.8159
+HistGradientBoosting,N/A,0.4402,N/A,0.7094,0.8241
+RandomForest,N/A,0.7301,N/A,0.6873,0.8429
+XGBoost,N/A,0.7901,N/A,0.7263,0.8443
+LightGBM,N/A,0.5004,N/A,0.7233,0.8558
+CatBoost,N/A,2.0212,N/A,0.7101,0.8145

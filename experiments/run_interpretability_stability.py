@@ -17,4 +17,4 @@ for ds in ['breast_cancer','covertype','adult_income','energy_efficiency','calif
    sp.append(spearmanr(imps[i],imps[j]).statistic); kt.append(kendalltau(imps[i],imps[j]).statistic)
    A=set(np.argsort(-imps[i])[:min(10,len(imps[i]))]); B=set(np.argsort(-imps[j])[:min(10,len(imps[j]))]); ov.append(len(A&B)/len(A))
  rows.append({'Dataset':b.name,'Spearman':np.mean(sp),'KendallTau':np.mean(kt),'Top10Overlap':np.mean(ov)}); print(rows[-1])
-Path('results').mkdir(exist_ok=True); pd.DataFrame(rows).to_csv('results/interpretability_stability.csv',index=False)
+Path('results/generated').mkdir(parents=True, exist_ok=True); pd.DataFrame(rows).to_csv('results/generated/interpretability_stability.csv',index=False)
