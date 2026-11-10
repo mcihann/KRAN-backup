@@ -1,20 +1,45 @@
-# Experimental outputs and provenance
 
-This directory separates **three types of information that must not be conflated**:
+# Experimental Results and Data Provenance
 
-| Folder | Data provenance | Appropriate claim |
-|---|---|---|
-| [`manuscript_tables/`](manuscript_tables/) | CSV transcription of the **22 tables** present in the user-supplied revised manuscript DOCX | "Reported in the revised manuscript"; **not** newly executed |
-| [`legacy_initial_repository/`](legacy_initial_repository/) | 11 CSV files **unchanged** from the original uploaded repository, dated before the revision | Historical/replaced; **do not** use as current paper results |
-| `generated/` | Outputs of repository scripts, created when a user actually runs them | Newly executed under the recorded code/environment; not necessarily numerically identical to the revised manuscript |
+This directory contains the experimental results and reference tables associated with the **Knothe-Rosenblatt Additive Network (KRAN)**. The files are organized according to their origin and experimental purpose to ensure transparency, traceability, and reproducibility.
 
-**Source extraction warning:** Word can contain concatenated numeric text without an explicit ± sign (e.g., `0.192004` in a main-comparison cell). The CSVs preserve cell text exactly, rather than presuming which digits form the mean and standard deviation. Inspect the DOCX and correct the actual source table before interpreting these ambiguous entries as numeric mean/SD pairs. Table 11 also has a column-label anomaly affecting training/inference-time interpretation. See the Turkish audit report in `docs/`.
+## Directory Structure
 
-To regenerate the reference-table transcription from a local, authorized copy of the DOCX:
+| Directory | Description |
+|---|---|
+| `manuscript_tables/` | CSV representations of the 22 tables reported in the revised KRAN manuscript. These files document the reported experimental results and should not be interpreted as independently reproduced outputs. |
+| `legacy_initial_repository/` | Original experimental CSV files retained from the initial repository version for historical reference. These results correspond to earlier experimental configurations and should not be substituted for the revised manuscript results. |
+| `generated/` | Output directory for results produced by executing the repository's experimental scripts. Generated results depend on the specified configurations, software environment, and computational hardware. |
+
+## Experimental Protocols
+
+The revised study includes distinct experimental protocols:
+
+- Fixed-budget benchmark evaluations and architectural ablations.
+- Repeated nested-holdout predictive comparisons using five outer data partitions.
+- Numerical stability, normalization, feature-ordering, and noise-sensitivity analyses.
+- Original-feature interpretability and explanation-stability investigations.
+- Computational scalability experiments.
+
+Results from different protocols must be interpreted separately because training configurations, data partitioning, target transformations, and model-selection procedures may differ.
+
+## Data Integrity and Reproducibility
+
+The manuscript reference tables were transcribed from the revised manuscript rather than generated through a new execution of the complete experimental pipeline.
+
+Certain source-table entries require verification because their numerical formatting does not unambiguously distinguish mean values from standard deviations. The original cell representations are preserved in the corresponding CSV files pending source-level verification.
+
+The training/inference-time column labels associated with Table 11 also require confirmation against the original experimental records.
+
+The archived CSV files are retained for transparency and historical traceability. They must not be presented as independent reproductions of the revised experimental results.
+
+## Regenerating Manuscript Tables
+
+To regenerate reference-table transcriptions from a local copy of the revised manuscript:
 
 ```bash
 python -m pip install -e ".[tables]"
 python scripts/extract_manuscript_tables.py /path/to/revised_manuscript.docx
 ```
 
-Do not manually copy numbers between **fixed-budget** ablations and **inner-validation-selected repeated-holdout** experiments: they use distinct training durations, target transforms, and selection procedures. Never call the archived 11 legacy CSVs a reproduction of the revised paper.
+For experiment execution, configuration details, and reproducibility limitations, refer to the repository's main `README.md` and experiment documentation.
